@@ -1,0 +1,153 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cores principais */
+body {
+    font-family: cursive;
+    background-color: #292a2b;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ffffff4b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 30px 0;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.introducao, .sobre {
+    width: 45%;
+}
+
+.introducao img {
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+}
+
+.sobre .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sobre .img-galeria {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+}
+
+footer {
+    background-color: #ffffff4b;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.cardapio {
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #00000034;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 200px; /* Definindo uma altura fixa para todas as imagens */
+    object-fit: cover; /* Ajuste para manter a proporção da imagem */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+}
+
+.item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introducao, .sobre {
+        width: 90%;
+    }
+
+    .introducao img, .sobre .img-galeria {
+        width: 80%;
+    }
+
+    .item {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
